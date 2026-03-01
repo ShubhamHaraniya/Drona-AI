@@ -1,0 +1,1044 @@
+[
+    {
+        "id": "ML-001",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Linear Regression",
+        "question": "What does linear regression predict?",
+        "options": [
+            "Continuous values",
+            "Discrete classes",
+            "Clusters",
+            "Rankings"
+        ],
+        "correctAnswer": "Continuous values",
+        "explanation": "Linear regression models the relationship between features and a continuous target variable, predicting real-valued outputs.",
+        "tags": [
+            "regression",
+            "basics"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-002",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Linear Regression",
+        "question": "Which loss function is commonly used in linear regression?",
+        "options": [
+            "Mean Squared Error",
+            "Cross Entropy",
+            "Hinge Loss",
+            "KL Divergence"
+        ],
+        "correctAnswer": "Mean Squared Error",
+        "explanation": "MSE measures the average squared difference between predicted and actual values, making it the standard loss for regression.",
+        "tags": [
+            "loss",
+            "mse"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-003",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Logistic Regression",
+        "question": "What type of output does logistic regression produce?",
+        "options": [
+            "Probability between 0 and 1",
+            "Any real number",
+            "Integer values",
+            "Complex numbers"
+        ],
+        "correctAnswer": "Probability between 0 and 1",
+        "explanation": "Logistic regression uses the sigmoid function to map outputs to probabilities in [0,1] for binary classification.",
+        "tags": [
+            "classification",
+            "sigmoid"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-004",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Decision Trees",
+        "question": "What is the main advantage of decision trees?",
+        "options": [
+            "High interpretability",
+            "Always highest accuracy",
+            "No overfitting",
+            "Works only with numerical data"
+        ],
+        "correctAnswer": "High interpretability",
+        "explanation": "Decision trees create human-readable rules that can be easily visualized and understood.",
+        "tags": [
+            "interpretability",
+            "tree"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-005",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Model Evaluation",
+        "topic": "Metrics",
+        "question": "Accuracy is defined as:",
+        "options": [
+            "(TP+TN)/(TP+TN+FP+FN)",
+            "TP/(TP+FP)",
+            "TP/(TP+FN)",
+            "TN/(TN+FP)"
+        ],
+        "correctAnswer": "(TP+TN)/(TP+TN+FP+FN)",
+        "explanation": "Accuracy is the ratio of correct predictions (true positives + true negatives) to total predictions.",
+        "tags": [
+            "metrics",
+            "accuracy"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-006",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Unsupervised Learning",
+        "topic": "K-Means Clustering",
+        "question": "K-Means clustering requires which input parameter?",
+        "options": [
+            "Number of clusters K",
+            "Learning rate",
+            "Number of epochs",
+            "Regularization strength"
+        ],
+        "correctAnswer": "Number of clusters K",
+        "explanation": "K-Means requires the user to specify K, the number of clusters, before running the algorithm.",
+        "tags": [
+            "clustering",
+            "kmeans"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-007",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Unsupervised Learning",
+        "topic": "PCA",
+        "question": "PCA is primarily used for:",
+        "options": [
+            "Dimensionality reduction",
+            "Classification",
+            "Clustering",
+            "Regression"
+        ],
+        "correctAnswer": "Dimensionality reduction",
+        "explanation": "PCA finds principal components that capture maximum variance, reducing the number of features.",
+        "tags": [
+            "pca",
+            "dim-reduction"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-008",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Deep Learning",
+        "topic": "Neural Networks",
+        "question": "What is an activation function in a neural network?",
+        "options": [
+            "A function that introduces non-linearity",
+            "A function that initializes weights",
+            "A loss function",
+            "An optimizer"
+        ],
+        "correctAnswer": "A function that introduces non-linearity",
+        "explanation": "Activation functions like ReLU or Sigmoid allow neural networks to learn non-linear decision boundaries.",
+        "tags": [
+            "activation",
+            "neural-net"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-009",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Model Evaluation",
+        "topic": "Cross Validation",
+        "question": "What is k-fold cross-validation?",
+        "options": [
+            "Splitting data into k parts and using each as test set once",
+            "Training k different models",
+            "Using k features",
+            "Running k epochs"
+        ],
+        "correctAnswer": "Splitting data into k parts and using each as test set once",
+        "explanation": "K-fold CV divides data into k subsets, trains on k-1 folds, tests on 1 fold, and rotates through all folds.",
+        "tags": [
+            "cv",
+            "validation"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-010",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Random Forest",
+        "question": "Random Forest is an ensemble of:",
+        "options": [
+            "Decision trees",
+            "Neural networks",
+            "SVMs",
+            "Linear models"
+        ],
+        "correctAnswer": "Decision trees",
+        "explanation": "Random Forest builds multiple decision trees using bagging and random feature subsets, then aggregates predictions.",
+        "tags": [
+            "ensemble",
+            "random-forest"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-011",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Support Vector Machines",
+        "question": "SVM aims to find:",
+        "options": [
+            "Maximum margin hyperplane",
+            "Minimum error surface",
+            "Deepest neural network",
+            "Closest cluster center"
+        ],
+        "correctAnswer": "Maximum margin hyperplane",
+        "explanation": "SVM finds the hyperplane that maximizes the margin between classes for optimal separation.",
+        "tags": [
+            "svm",
+            "margin"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-012",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Model Evaluation",
+        "topic": "Bias-Variance Tradeoff",
+        "question": "High bias in a model indicates:",
+        "options": [
+            "Underfitting",
+            "Overfitting",
+            "Perfect fit",
+            "No training"
+        ],
+        "correctAnswer": "Underfitting",
+        "explanation": "High bias means the model is too simple and cannot capture the underlying patterns — it underfits.",
+        "tags": [
+            "bias",
+            "underfitting"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-013",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Deep Learning",
+        "topic": "CNNs",
+        "question": "CNNs are primarily used for:",
+        "options": [
+            "Image processing",
+            "Text generation",
+            "Tabular data",
+            "Time series only"
+        ],
+        "correctAnswer": "Image processing",
+        "explanation": "Convolutional Neural Networks use convolutional layers to detect spatial features in images.",
+        "tags": [
+            "cnn",
+            "vision"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-014",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Deep Learning",
+        "topic": "RNNs",
+        "question": "RNNs are designed for:",
+        "options": [
+            "Sequential data",
+            "Image classification",
+            "Dimensionality reduction",
+            "Clustering"
+        ],
+        "correctAnswer": "Sequential data",
+        "explanation": "RNNs have recurrent connections that allow them to maintain state across sequential inputs.",
+        "tags": [
+            "rnn",
+            "sequence"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-015",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Logistic Regression",
+        "question": "The sigmoid function outputs values in the range:",
+        "options": [
+            "(0, 1)",
+            "(-1, 1)",
+            "(0, ∞)",
+            "(-∞, ∞)"
+        ],
+        "correctAnswer": "(0, 1)",
+        "explanation": "Sigmoid σ(x) = 1/(1+e^-x) maps any real number to a value between 0 and 1.",
+        "tags": [
+            "sigmoid",
+            "activation"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-016",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Supervised Learning",
+        "topic": "Linear Regression",
+        "question": "Ridge regression adds which type of regularization?",
+        "options": [
+            "L2 (squared weights)",
+            "L1 (absolute weights)",
+            "Dropout",
+            "Batch normalization"
+        ],
+        "correctAnswer": "L2 (squared weights)",
+        "explanation": "Ridge regression adds λΣw² penalty to prevent overfitting by penalizing large weight values.",
+        "tags": [
+            "regularization",
+            "ridge"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-017",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Supervised Learning",
+        "topic": "Decision Trees",
+        "question": "Which metric does the ID3 algorithm use for splitting?",
+        "options": [
+            "Information Gain",
+            "Gini Index",
+            "Variance Reduction",
+            "Chi-Square"
+        ],
+        "correctAnswer": "Information Gain",
+        "explanation": "ID3 uses Information Gain (entropy reduction) to select the best feature for splitting at each node.",
+        "tags": [
+            "id3",
+            "entropy"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-018",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Supervised Learning",
+        "topic": "Support Vector Machines",
+        "question": "The kernel trick in SVM is used to:",
+        "options": [
+            "Map data to higher dimensions without explicit computation",
+            "Reduce dimensions",
+            "Speed up training",
+            "Initialize weights"
+        ],
+        "correctAnswer": "Map data to higher dimensions without explicit computation",
+        "explanation": "The kernel trick computes dot products in high-dimensional space implicitly, enabling non-linear classification.",
+        "tags": [
+            "kernel",
+            "svm"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-019",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Unsupervised Learning",
+        "topic": "K-Means Clustering",
+        "question": "K-Means converges when:",
+        "options": [
+            "Cluster assignments stop changing",
+            "K iterations are completed",
+            "Loss reaches zero",
+            "All points are in one cluster"
+        ],
+        "correctAnswer": "Cluster assignments stop changing",
+        "explanation": "K-Means iterates between assignment and update steps until cluster memberships stabilize.",
+        "tags": [
+            "convergence",
+            "kmeans"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-020",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Unsupervised Learning",
+        "topic": "PCA",
+        "question": "The first principal component captures:",
+        "options": [
+            "Maximum variance direction",
+            "Minimum variance direction",
+            "Mean of all features",
+            "Most correlated features"
+        ],
+        "correctAnswer": "Maximum variance direction",
+        "explanation": "PC1 is the direction in feature space along which the data varies the most.",
+        "tags": [
+            "pca",
+            "variance"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-021",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Deep Learning",
+        "topic": "Neural Networks",
+        "question": "Backpropagation computes:",
+        "options": [
+            "Gradients of loss w.r.t. weights using chain rule",
+            "Forward pass predictions",
+            "Weight initialization",
+            "Data augmentation"
+        ],
+        "correctAnswer": "Gradients of loss w.r.t. weights using chain rule",
+        "explanation": "Backprop uses the chain rule to compute ∂L/∂w for each weight, enabling gradient descent optimization.",
+        "tags": [
+            "backprop",
+            "gradients"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-022",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Deep Learning",
+        "topic": "CNNs",
+        "question": "What does a pooling layer do in a CNN?",
+        "options": [
+            "Reduces spatial dimensions",
+            "Increases feature maps",
+            "Adds non-linearity",
+            "Normalizes activations"
+        ],
+        "correctAnswer": "Reduces spatial dimensions",
+        "explanation": "Pooling (max/avg) downsamples feature maps, reducing computation and adding translation invariance.",
+        "tags": [
+            "pooling",
+            "cnn"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-023",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Deep Learning",
+        "topic": "Transformers",
+        "question": "Self-attention mechanism computes:",
+        "options": [
+            "Weighted relationships between all positions in a sequence",
+            "Convolution over local regions",
+            "Recurrent hidden states",
+            "Pooling over time steps"
+        ],
+        "correctAnswer": "Weighted relationships between all positions in a sequence",
+        "explanation": "Self-attention computes Q·K^T/√d to find relevance between all token pairs, then weights values V accordingly.",
+        "tags": [
+            "attention",
+            "transformer"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-024",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Model Evaluation",
+        "topic": "Metrics",
+        "question": "F1-Score is the harmonic mean of:",
+        "options": [
+            "Precision and Recall",
+            "Accuracy and Recall",
+            "Precision and Specificity",
+            "Sensitivity and Specificity"
+        ],
+        "correctAnswer": "Precision and Recall",
+        "explanation": "F1 = 2·(P·R)/(P+R) balances precision (correctness of positives) with recall (coverage of actual positives).",
+        "tags": [
+            "f1",
+            "metrics"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-025",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Model Evaluation",
+        "topic": "Bias-Variance Tradeoff",
+        "question": "Increasing model complexity generally:",
+        "options": [
+            "Decreases bias, increases variance",
+            "Increases bias, decreases variance",
+            "Decreases both",
+            "Increases both"
+        ],
+        "correctAnswer": "Decreases bias, increases variance",
+        "explanation": "Complex models fit training data better (low bias) but may not generalize (high variance).",
+        "tags": [
+            "bias-variance",
+            "complexity"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-026",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Linear Regression",
+        "question": "If y = 3x + 2, what is the predicted value of y when x = 4?",
+        "correctAnswer": 14,
+        "explanation": "y = 3(4) + 2 = 12 + 2 = 14. This is a simple linear equation evaluation.",
+        "tags": [
+            "linear",
+            "prediction"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-027",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Model Evaluation",
+        "topic": "Metrics",
+        "question": "If TP=80, TN=15, FP=5, FN=0, what is the accuracy (in %)?",
+        "correctAnswer": 95,
+        "explanation": "Accuracy = (80+15)/(80+15+5+0) = 95/100 = 95%.",
+        "tags": [
+            "accuracy",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-028",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Unsupervised Learning",
+        "topic": "PCA",
+        "question": "If a dataset has 10 features and we keep 3 principal components, how many features remain?",
+        "correctAnswer": 3,
+        "explanation": "PCA reduces from 10 features to 3 principal components. The number of features after PCA equals the number of components kept.",
+        "tags": [
+            "pca",
+            "dimensionality"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-029",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Model Evaluation",
+        "topic": "Metrics",
+        "question": "If Precision=0.8 and Recall=0.6, what is F1-Score (to 2 decimal places, multiply by 100)?",
+        "correctAnswer": 69,
+        "explanation": "F1 = 2×(0.8×0.6)/(0.8+0.6) = 2×0.48/1.4 = 0.96/1.4 ≈ 0.6857 ≈ 0.69. Multiply by 100 = 69.",
+        "tags": [
+            "f1",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-030",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Supervised Learning",
+        "topic": "Logistic Regression",
+        "question": "What is σ(0) where σ is the sigmoid function? Express as a decimal (e.g., 0.5 → enter 50 for percentage).",
+        "correctAnswer": 50,
+        "explanation": "σ(0) = 1/(1+e^0) = 1/(1+1) = 1/2 = 0.5 = 50%.",
+        "tags": [
+            "sigmoid",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-031",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Deep Learning",
+        "topic": "Neural Networks",
+        "question": "A neural network has input size 4, hidden layer of 3 neurons (no bias), and output of 2 neurons (no bias). How many total weights?",
+        "correctAnswer": 18,
+        "explanation": "Weights = (4×3) + (3×2) = 12 + 6 = 18. Each connection between layers has one weight.",
+        "tags": [
+            "weights",
+            "architecture"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-032",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Unsupervised Learning",
+        "topic": "K-Means Clustering",
+        "question": "In K-Means with K=3, if cluster sizes are 10, 15, 25, what percentage of data is in the largest cluster?",
+        "correctAnswer": 50,
+        "explanation": "Total = 10+15+25 = 50. Largest = 25. Percentage = 25/50 × 100 = 50%.",
+        "tags": [
+            "kmeans",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-033",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Model Evaluation",
+        "topic": "Cross Validation",
+        "question": "In 5-fold cross validation, what percentage of data is used for testing in each fold?",
+        "correctAnswer": 20,
+        "explanation": "Each fold uses 1/5 = 20% of data for testing and 80% for training.",
+        "tags": [
+            "cv",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-034",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Deep Learning",
+        "topic": "CNNs",
+        "question": "A 28×28 image is convolved with a 5×5 filter (stride 1, no padding). What is the output size (one dimension)?",
+        "correctAnswer": 24,
+        "explanation": "Output = (28-5)/1 + 1 = 24. The convolution reduces spatial dimensions.",
+        "tags": [
+            "convolution",
+            "output-size"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-035",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Deep Learning",
+        "topic": "Transformers",
+        "question": "In self-attention with d_k=64, what is √d_k?",
+        "correctAnswer": 8,
+        "explanation": "√64 = 8. This scaling factor prevents dot products from growing too large.",
+        "tags": [
+            "attention",
+            "scaling"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "ML-036",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Supervised Learning",
+        "topic": "Linear Regression",
+        "question": "Given MSE = Σ(yi - ŷi)² / n, if residuals are [1, -2, 3, -1, 0] for n=5, what is MSE (multiply by 10)?",
+        "correctAnswer": 30,
+        "explanation": "MSE = (1+4+9+1+0)/5 = 15/5 = 3. Multiply by 10 = 30.",
+        "tags": [
+            "mse",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-037",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Deep Learning",
+        "topic": "Neural Networks",
+        "question": "A network has layers [784, 256, 128, 10] with biases. How many total parameters?",
+        "correctAnswer": 235146,
+        "explanation": "Params = (784×256+256) + (256×128+128) + (128×10+10) = 200960 + 32896 + 1290 = 235146.",
+        "tags": [
+            "parameters",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 90
+    },
+    {
+        "id": "ML-038",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Deep Learning",
+        "topic": "CNNs",
+        "question": "A conv layer has 32 filters of size 3×3 applied to input with 3 channels. How many parameters (with bias)?",
+        "correctAnswer": 896,
+        "explanation": "Params = 32 × (3×3×3) + 32 = 32×27 + 32 = 864 + 32 = 896.",
+        "tags": [
+            "conv-params",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-039",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Supervised Learning",
+        "topic": "Support Vector Machines",
+        "question": "In a 2D SVM, if the weight vector w=[3,4], what is ||w||?",
+        "correctAnswer": 5,
+        "explanation": "||w|| = √(3²+4²) = √(9+16) = √25 = 5. The margin is 2/||w||.",
+        "tags": [
+            "svm",
+            "norm"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-040",
+        "subject": "Machine Learning",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Deep Learning",
+        "topic": "Neural Networks",
+        "question": "ReLU(x) = max(0,x). What is ReLU(-5)?",
+        "correctAnswer": 0,
+        "explanation": "ReLU returns 0 for negative inputs. max(0, -5) = 0.",
+        "tags": [
+            "relu",
+            "activation"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "ML-041",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Easy",
+        "module": "Supervised Learning",
+        "topic": "Linear Regression",
+        "question": "Which of the following are assumptions of linear regression?",
+        "options": [
+            "Linearity",
+            "Homoscedasticity",
+            "Independence of errors",
+            "Features must be categorical"
+        ],
+        "correctAnswers": [
+            "Linearity",
+            "Homoscedasticity",
+            "Independence of errors"
+        ],
+        "explanation": "Linear regression assumes linear relationship, constant variance of errors (homoscedasticity), and independent errors. Features can be numerical.",
+        "tags": [
+            "assumptions",
+            "regression"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-042",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Easy",
+        "module": "Deep Learning",
+        "topic": "Neural Networks",
+        "question": "Which are common activation functions?",
+        "options": [
+            "ReLU",
+            "Sigmoid",
+            "Tanh",
+            "Linear Regression"
+        ],
+        "correctAnswers": [
+            "ReLU",
+            "Sigmoid",
+            "Tanh"
+        ],
+        "explanation": "ReLU, Sigmoid, and Tanh are activation functions. Linear Regression is a model, not an activation function.",
+        "tags": [
+            "activation",
+            "neural-net"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-043",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Model Evaluation",
+        "topic": "Metrics",
+        "question": "Which metrics are useful for imbalanced datasets?",
+        "options": [
+            "F1-Score",
+            "Precision",
+            "Recall",
+            "Accuracy alone"
+        ],
+        "correctAnswers": [
+            "F1-Score",
+            "Precision",
+            "Recall"
+        ],
+        "explanation": "For imbalanced data, accuracy is misleading. F1, Precision, and Recall give better insight into model performance on minority classes.",
+        "tags": [
+            "imbalanced",
+            "metrics"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-044",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Unsupervised Learning",
+        "topic": "K-Means Clustering",
+        "question": "Which are limitations of K-Means?",
+        "options": [
+            "Requires specifying K",
+            "Sensitive to initialization",
+            "Assumes spherical clusters",
+            "Works well with all cluster shapes"
+        ],
+        "correctAnswers": [
+            "Requires specifying K",
+            "Sensitive to initialization",
+            "Assumes spherical clusters"
+        ],
+        "explanation": "K-Means assumes spherical/equal-size clusters, requires K upfront, and different initializations can give different results.",
+        "tags": [
+            "kmeans",
+            "limitations"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-045",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Deep Learning",
+        "topic": "CNNs",
+        "question": "Which layers are commonly found in a CNN?",
+        "options": [
+            "Convolutional layer",
+            "Pooling layer",
+            "Fully connected layer",
+            "Recurrent layer"
+        ],
+        "correctAnswers": [
+            "Convolutional layer",
+            "Pooling layer",
+            "Fully connected layer"
+        ],
+        "explanation": "CNNs typically have conv → pooling → FC layers. Recurrent layers belong to RNNs.",
+        "tags": [
+            "cnn",
+            "architecture"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-046",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Supervised Learning",
+        "topic": "Random Forest",
+        "question": "Which techniques does Random Forest use?",
+        "options": [
+            "Bagging",
+            "Random feature subset",
+            "Bootstrap sampling",
+            "Gradient boosting"
+        ],
+        "correctAnswers": [
+            "Bagging",
+            "Random feature subset",
+            "Bootstrap sampling"
+        ],
+        "explanation": "RF uses bagging (bootstrap aggregating) with random feature subsets. Gradient boosting is a different ensemble technique.",
+        "tags": [
+            "random-forest",
+            "ensemble"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-047",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "Deep Learning",
+        "topic": "Transformers",
+        "question": "Which components are part of the Transformer architecture?",
+        "options": [
+            "Multi-head attention",
+            "Positional encoding",
+            "Feed-forward network",
+            "Convolutional layers"
+        ],
+        "correctAnswers": [
+            "Multi-head attention",
+            "Positional encoding",
+            "Feed-forward network"
+        ],
+        "explanation": "Transformers use multi-head attention, positional encoding, and FFN layers. No convolutions in the original architecture.",
+        "tags": [
+            "transformer",
+            "architecture"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-048",
+        "subject": "Machine Learning",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "Model Evaluation",
+        "topic": "Bias-Variance Tradeoff",
+        "question": "Which statements about overfitting are true?",
+        "options": [
+            "High variance on test data",
+            "Low training error",
+            "Model is too complex",
+            "Always caused by too much data"
+        ],
+        "correctAnswers": [
+            "High variance on test data",
+            "Low training error",
+            "Model is too complex"
+        ],
+        "explanation": "Overfitting = low train error + high test error + overly complex model. More data actually helps reduce overfitting.",
+        "tags": [
+            "overfitting",
+            "bias-variance"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "ML-049",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Deep Learning",
+        "topic": "RNNs",
+        "question": "What problem do LSTMs solve that vanilla RNNs cannot?",
+        "options": [
+            "Vanishing gradient problem",
+            "Overfitting",
+            "Data augmentation",
+            "Feature extraction"
+        ],
+        "correctAnswer": "Vanishing gradient problem",
+        "explanation": "LSTMs use gates (forget, input, output) to control information flow, solving the vanishing gradient issue in long sequences.",
+        "tags": [
+            "lstm",
+            "vanishing-gradient"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "ML-050",
+        "subject": "Machine Learning",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Supervised Learning",
+        "topic": "Logistic Regression",
+        "question": "The cost function for logistic regression is:",
+        "options": [
+            "Binary cross-entropy",
+            "Mean squared error",
+            "Hinge loss",
+            "Huber loss"
+        ],
+        "correctAnswer": "Binary cross-entropy",
+        "explanation": "BCE = -[y·log(ŷ) + (1-y)·log(1-ŷ)] is used because MSE creates non-convex optimization for sigmoid outputs.",
+        "tags": [
+            "cross-entropy",
+            "logistic"
+        ],
+        "estimatedTimeSeconds": 45
+    }
+]

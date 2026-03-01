@@ -1,0 +1,1045 @@
+[
+    {
+        "id": "DB-001",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "SELECT Queries",
+        "question": "Which SQL keyword retrieves data from a table?",
+        "options": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+        ],
+        "correctAnswer": "SELECT",
+        "explanation": "SELECT is the DML command used to query and retrieve data from database tables.",
+        "tags": [
+            "select",
+            "basics"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-002",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "SELECT Queries",
+        "question": "Which clause filters rows in a SELECT statement?",
+        "options": [
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY",
+            "HAVING"
+        ],
+        "correctAnswer": "WHERE",
+        "explanation": "WHERE filters individual rows before grouping. HAVING filters after GROUP BY.",
+        "tags": [
+            "where",
+            "filter"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-003",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "Joins",
+        "question": "An INNER JOIN returns:",
+        "options": [
+            "Only matching rows from both tables",
+            "All rows from both tables",
+            "All rows from left table",
+            "All rows from right table"
+        ],
+        "correctAnswer": "Only matching rows from both tables",
+        "explanation": "INNER JOIN returns only rows where the join condition is satisfied in both tables.",
+        "tags": [
+            "join",
+            "inner"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-004",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Normalization",
+        "topic": "1NF 2NF 3NF",
+        "question": "First Normal Form (1NF) requires:",
+        "options": [
+            "Atomic values in each cell",
+            "No partial dependencies",
+            "No transitive dependencies",
+            "No multi-valued dependencies"
+        ],
+        "correctAnswer": "Atomic values in each cell",
+        "explanation": "1NF requires each column to contain only atomic (indivisible) values — no repeating groups or arrays.",
+        "tags": [
+            "1nf",
+            "normalization"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-005",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Transactions",
+        "topic": "ACID Properties",
+        "question": "The 'A' in ACID stands for:",
+        "options": [
+            "Atomicity",
+            "Accuracy",
+            "Availability",
+            "Authentication"
+        ],
+        "correctAnswer": "Atomicity",
+        "explanation": "Atomicity ensures a transaction is all-or-nothing — either all operations succeed or none do.",
+        "tags": [
+            "acid",
+            "atomicity"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-006",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Transactions",
+        "topic": "ACID Properties",
+        "question": "Isolation in ACID ensures:",
+        "options": [
+            "Concurrent transactions don't interfere",
+            "Data is saved to disk",
+            "All operations complete",
+            "Data remains valid"
+        ],
+        "correctAnswer": "Concurrent transactions don't interfere",
+        "explanation": "Isolation ensures each transaction executes as if it's the only one running on the system.",
+        "tags": [
+            "acid",
+            "isolation"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-007",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Indexing & Storage",
+        "topic": "B+ Trees",
+        "question": "B+ Trees are commonly used for:",
+        "options": [
+            "Database indexing",
+            "Sorting in memory",
+            "Graph traversal",
+            "Hash functions"
+        ],
+        "correctAnswer": "Database indexing",
+        "explanation": "B+ Trees provide efficient range queries and are the standard index structure in most RDBMS.",
+        "tags": [
+            "b-tree",
+            "index"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-008",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "ER Modeling",
+        "topic": "ER Diagrams",
+        "question": "In an ER diagram, rectangles represent:",
+        "options": [
+            "Entities",
+            "Attributes",
+            "Relationships",
+            "Keys"
+        ],
+        "correctAnswer": "Entities",
+        "explanation": "Entities are shown as rectangles, attributes as ovals, relationships as diamonds in ER notation.",
+        "tags": [
+            "er",
+            "entity"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-009",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "Aggregation",
+        "question": "Which function counts the number of rows?",
+        "options": [
+            "COUNT()",
+            "SUM()",
+            "AVG()",
+            "MAX()"
+        ],
+        "correctAnswer": "COUNT()",
+        "explanation": "COUNT(*) counts all rows; COUNT(column) counts non-null values in a column.",
+        "tags": [
+            "count",
+            "aggregate"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-010",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "ER Modeling",
+        "topic": "Relational Algebra",
+        "question": "The SELECT operation in relational algebra (σ) does:",
+        "options": [
+            "Filters rows based on a condition",
+            "Selects columns",
+            "Joins tables",
+            "Sorts results"
+        ],
+        "correctAnswer": "Filters rows based on a condition",
+        "explanation": "σ (sigma) selects rows matching a predicate. π (pi) selects/projects columns.",
+        "tags": [
+            "sigma",
+            "relational-algebra"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-011",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "Subqueries",
+        "question": "A subquery is:",
+        "options": [
+            "A query nested inside another query",
+            "A stored procedure",
+            "A trigger",
+            "A view"
+        ],
+        "correctAnswer": "A query nested inside another query",
+        "explanation": "Subqueries (inner queries) execute first, and their result is used by the outer query.",
+        "tags": [
+            "subquery",
+            "nested"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-012",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Normalization",
+        "topic": "Functional Dependencies",
+        "question": "A functional dependency X → Y means:",
+        "options": [
+            "Y is uniquely determined by X",
+            "X is determined by Y",
+            "X and Y are independent",
+            "X equals Y"
+        ],
+        "correctAnswer": "Y is uniquely determined by X",
+        "explanation": "If two tuples have the same X value, they must have the same Y value.",
+        "tags": [
+            "fd",
+            "dependency"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-013",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Indexing & Storage",
+        "topic": "File Organization",
+        "question": "Sequential file organization stores records:",
+        "options": [
+            "In order of a key field",
+            "Randomly",
+            "In a hash table",
+            "In a tree"
+        ],
+        "correctAnswer": "In order of a key field",
+        "explanation": "Sequential organization stores records sorted by a search key, enabling efficient range queries.",
+        "tags": [
+            "sequential",
+            "file"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-014",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "SQL",
+        "topic": "Joins",
+        "question": "A LEFT OUTER JOIN returns:",
+        "options": [
+            "All rows from left table + matching from right",
+            "Only matching rows",
+            "All rows from right table",
+            "Cartesian product"
+        ],
+        "correctAnswer": "All rows from left table + matching from right",
+        "explanation": "LEFT JOIN keeps all left table rows; unmatched right table columns get NULL values.",
+        "tags": [
+            "left-join",
+            "outer"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-015",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Normalization",
+        "topic": "1NF 2NF 3NF",
+        "question": "2NF requires:",
+        "options": [
+            "1NF + no partial dependencies on candidate key",
+            "Only atomic values",
+            "No transitive dependencies",
+            "BCNF compliance"
+        ],
+        "correctAnswer": "1NF + no partial dependencies on candidate key",
+        "explanation": "2NF removes partial dependencies — non-key attributes must depend on the entire candidate key.",
+        "tags": [
+            "2nf",
+            "partial"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-016",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Normalization",
+        "topic": "1NF 2NF 3NF",
+        "question": "3NF additionally removes:",
+        "options": [
+            "Transitive dependencies",
+            "Partial dependencies",
+            "Multi-valued dependencies",
+            "Join dependencies"
+        ],
+        "correctAnswer": "Transitive dependencies",
+        "explanation": "3NF removes transitive dependencies: if A→B and B→C, then C should not transitively depend on A through B.",
+        "tags": [
+            "3nf",
+            "transitive"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-017",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Normalization",
+        "topic": "BCNF",
+        "question": "BCNF is violated when:",
+        "options": [
+            "A non-superkey determines another attribute",
+            "A key determines a non-key",
+            "There are partial dependencies",
+            "There are multi-valued dependencies"
+        ],
+        "correctAnswer": "A non-superkey determines another attribute",
+        "explanation": "BCNF requires every determinant to be a superkey. If X→Y and X is not a superkey, BCNF is violated.",
+        "tags": [
+            "bcnf",
+            "violation"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-018",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Transactions",
+        "topic": "Concurrency Control",
+        "question": "Two-Phase Locking (2PL) has which phases?",
+        "options": [
+            "Growing and Shrinking",
+            "Lock and Unlock",
+            "Read and Write",
+            "Commit and Rollback"
+        ],
+        "correctAnswer": "Growing and Shrinking",
+        "explanation": "Growing phase: acquire locks, no releases. Shrinking phase: release locks, no acquisitions. Ensures serializability.",
+        "tags": [
+            "2pl",
+            "concurrency"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-019",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Transactions",
+        "topic": "Deadlocks",
+        "question": "Deadlock occurs when:",
+        "options": [
+            "Circular wait among transactions",
+            "Too many queries",
+            "Table is full",
+            "Index is missing"
+        ],
+        "correctAnswer": "Circular wait among transactions",
+        "explanation": "Deadlock requires: mutual exclusion, hold-and-wait, no preemption, and circular wait.",
+        "tags": [
+            "deadlock",
+            "conditions"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-020",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Indexing & Storage",
+        "topic": "B+ Trees",
+        "question": "In a B+ Tree, all data pointers are at:",
+        "options": [
+            "Leaf nodes only",
+            "Root node",
+            "Internal nodes",
+            "All levels"
+        ],
+        "correctAnswer": "Leaf nodes only",
+        "explanation": "B+ Trees store actual data/record pointers only in leaves. Internal nodes store only keys for routing.",
+        "tags": [
+            "b-plus-tree",
+            "leaves"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-021",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "SQL",
+        "topic": "Aggregation",
+        "question": "HAVING clause is used with:",
+        "options": [
+            "GROUP BY to filter groups",
+            "WHERE to filter rows",
+            "JOIN to combine tables",
+            "ORDER BY to sort"
+        ],
+        "correctAnswer": "GROUP BY to filter groups",
+        "explanation": "HAVING filters aggregated groups (after GROUP BY), while WHERE filters individual rows (before GROUP BY).",
+        "tags": [
+            "having",
+            "group-by"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-022",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Indexing & Storage",
+        "topic": "Hashing",
+        "question": "Static hashing can suffer from:",
+        "options": [
+            "Bucket overflow",
+            "Deadlocks",
+            "Normalization issues",
+            "Transaction conflicts"
+        ],
+        "correctAnswer": "Bucket overflow",
+        "explanation": "When a hash bucket fills up, overflow chains are needed, degrading performance. Extendible hashing addresses this.",
+        "tags": [
+            "hashing",
+            "overflow"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-023",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "ER Modeling",
+        "topic": "ER Diagrams",
+        "question": "A weak entity depends on:",
+        "options": [
+            "A strong entity for identification",
+            "No other entity",
+            "The database schema",
+            "The query optimizer"
+        ],
+        "correctAnswer": "A strong entity for identification",
+        "explanation": "Weak entities cannot be uniquely identified by their own attributes — they need an identifying relationship with a strong entity.",
+        "tags": [
+            "weak-entity",
+            "identification"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-024",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Transactions",
+        "topic": "Concurrency Control",
+        "question": "Which isolation level prevents phantom reads?",
+        "options": [
+            "Serializable",
+            "Repeatable Read",
+            "Read Committed",
+            "Read Uncommitted"
+        ],
+        "correctAnswer": "Serializable",
+        "explanation": "Only Serializable prevents phantoms (new rows appearing). Repeatable Read prevents non-repeatable reads but not phantoms.",
+        "tags": [
+            "isolation-level",
+            "phantom"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-025",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "ER Modeling",
+        "topic": "Relational Algebra",
+        "question": "Natural join (⋈) combines tables by:",
+        "options": [
+            "All common attributes with equality",
+            "A user-specified condition",
+            "Cartesian product only",
+            "Primary key only"
+        ],
+        "correctAnswer": "All common attributes with equality",
+        "explanation": "Natural join automatically matches all attributes with the same name and performs equijoin on them.",
+        "tags": [
+            "natural-join",
+            "algebra"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-026",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "SELECT Queries",
+        "question": "SELECT COUNT(*) FROM students WHERE grade > 50; If there are 30 students with grade > 50, what is the result?",
+        "correctAnswer": 30,
+        "explanation": "COUNT(*) counts all rows matching the WHERE condition = 30 students.",
+        "tags": [
+            "count",
+            "query"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-027",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "Aggregation",
+        "question": "If a table has values [10, 20, 30, 40, 50], what does SELECT AVG(value) return?",
+        "correctAnswer": 30,
+        "explanation": "AVG = (10+20+30+40+50)/5 = 150/5 = 30.",
+        "tags": [
+            "avg",
+            "aggregate"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-028",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Normalization",
+        "topic": "1NF 2NF 3NF",
+        "question": "A relation with 5 attributes and a composite key of 2 attributes has how many non-key attributes?",
+        "correctAnswer": 3,
+        "explanation": "Non-key attributes = Total attributes - Key attributes = 5 - 2 = 3.",
+        "tags": [
+            "key",
+            "attributes"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-029",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Indexing & Storage",
+        "topic": "B+ Trees",
+        "question": "A B+ Tree of order 4 can have at most how many keys per node?",
+        "correctAnswer": 3,
+        "explanation": "Order m B+ Tree: max keys = m-1 = 4-1 = 3. Max children = m = 4.",
+        "tags": [
+            "b-tree",
+            "order"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-030",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "SQL",
+        "topic": "Joins",
+        "question": "Table A has 5 rows, Table B has 4 rows. A CROSS JOIN produces how many rows?",
+        "correctAnswer": 20,
+        "explanation": "Cross join = Cartesian product = 5 × 4 = 20 rows.",
+        "tags": [
+            "cross-join",
+            "cartesian"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-031",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Normalization",
+        "topic": "Functional Dependencies",
+        "question": "If R has attributes {A,B,C,D,E} and FDs: A→B, B→C, A→D. How many FDs are given?",
+        "correctAnswer": 3,
+        "explanation": "Three functional dependencies are explicitly stated: A→B, B→C, A→D.",
+        "tags": [
+            "fd",
+            "count"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-032",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Transactions",
+        "topic": "ACID Properties",
+        "question": "If a transaction transfers $100 from A (balance $500) to B (balance $300). After commit, what is A's balance?",
+        "correctAnswer": 400,
+        "explanation": "A: 500 - 100 = 400. B: 300 + 100 = 400. Atomicity ensures both updates succeed.",
+        "tags": [
+            "transaction",
+            "balance"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-033",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "SQL",
+        "topic": "Subqueries",
+        "question": "SELECT COUNT(*) FROM (SELECT DISTINCT department FROM employees) AS d; If there are 6 unique departments, result is:",
+        "correctAnswer": 6,
+        "explanation": "Inner query returns 6 distinct departments. Outer COUNT(*) counts them = 6.",
+        "tags": [
+            "subquery",
+            "distinct"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-034",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Indexing & Storage",
+        "topic": "B+ Trees",
+        "question": "In a B+ Tree of order 100 with 3 levels, the maximum number of keys at leaf level is (order-1) × (order^(levels-1)). For order 100, 3 levels: what is 99 × 10000?",
+        "correctAnswer": 990000,
+        "explanation": "Max leaf keys = (m-1) × m^(h-1) where m=100, h=3. That's 99 × 100² = 99 × 10000 = 990,000 keys.",
+        "tags": [
+            "b-tree",
+            "capacity"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DB-035",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Transactions",
+        "topic": "Deadlocks",
+        "question": "In a wait-for graph with 4 transactions and edges T1→T2, T2→T3, T3→T1, T4→T2, how many transactions are in the deadlock cycle?",
+        "correctAnswer": 3,
+        "explanation": "Cycle: T1→T2→T3→T1 involves 3 transactions. T4 waits but is not part of the cycle.",
+        "tags": [
+            "deadlock",
+            "cycle"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-036",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Indexing & Storage",
+        "topic": "Hashing",
+        "question": "With a hash function h(k) = k mod 7, what bucket does key 23 go to?",
+        "correctAnswer": 2,
+        "explanation": "23 mod 7 = 2 (since 7×3=21, 23-21=2).",
+        "tags": [
+            "hash",
+            "modulo"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-037",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "ER Modeling",
+        "topic": "ER Diagrams",
+        "question": "An entity with 3 single-valued attributes and 1 multi-valued attribute will produce at least how many tables when converted to relational schema?",
+        "correctAnswer": 2,
+        "explanation": "One table for the entity (with single-valued attrs) and one separate table for the multi-valued attribute.",
+        "tags": [
+            "er-to-relational",
+            "tables"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-038",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "Aggregation",
+        "question": "SELECT MAX(salary) - MIN(salary) FROM employees; If max=90000 and min=30000, result is:",
+        "correctAnswer": 60000,
+        "explanation": "Range = MAX - MIN = 90000 - 30000 = 60000.",
+        "tags": [
+            "range",
+            "aggregate"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-039",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Normalization",
+        "topic": "BCNF",
+        "question": "A relation R(A,B,C,D) with FDs: AB→C, C→D, D→A. How many candidate keys exist? (AB and CB are the candidate keys)",
+        "correctAnswer": 2,
+        "explanation": "AB→C→D (AB is a key). CB→ via C→D→A, so CB→A, and CB→C trivially, so CB is also a key. Two candidate keys: AB and CB.",
+        "tags": [
+            "candidate-key",
+            "bcnf"
+        ],
+        "estimatedTimeSeconds": 90
+    },
+    {
+        "id": "DB-040",
+        "subject": "Database Systems",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Transactions",
+        "topic": "Concurrency Control",
+        "question": "In timestamp-based concurrency, if T1 has timestamp 5 and T2 has timestamp 10, which transaction started first (enter its timestamp)?",
+        "correctAnswer": 5,
+        "explanation": "Lower timestamp = started earlier. T1 (timestamp 5) started before T2 (timestamp 10).",
+        "tags": [
+            "timestamp",
+            "ordering"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DB-041",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Easy",
+        "module": "Transactions",
+        "topic": "ACID Properties",
+        "question": "Which are ACID properties?",
+        "options": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+        ],
+        "correctAnswers": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+        ],
+        "explanation": "All four: Atomicity (all-or-nothing), Consistency (valid states), Isolation (no interference), Durability (permanent after commit).",
+        "tags": [
+            "acid",
+            "all"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-042",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Easy",
+        "module": "SQL",
+        "topic": "SELECT Queries",
+        "question": "Which are valid SQL aggregate functions?",
+        "options": [
+            "SUM",
+            "AVG",
+            "COUNT",
+            "BETWEEN"
+        ],
+        "correctAnswers": [
+            "SUM",
+            "AVG",
+            "COUNT"
+        ],
+        "explanation": "SUM, AVG, COUNT are aggregate functions. BETWEEN is a comparison operator used in WHERE clauses.",
+        "tags": [
+            "aggregate",
+            "functions"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DB-043",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "SQL",
+        "topic": "Joins",
+        "question": "Which join types can return NULL values for unmatched rows?",
+        "options": [
+            "LEFT OUTER JOIN",
+            "RIGHT OUTER JOIN",
+            "FULL OUTER JOIN",
+            "INNER JOIN"
+        ],
+        "correctAnswers": [
+            "LEFT OUTER JOIN",
+            "RIGHT OUTER JOIN",
+            "FULL OUTER JOIN"
+        ],
+        "explanation": "Outer joins pad unmatched rows with NULLs. INNER JOIN only returns matched rows — no NULLs from the join itself.",
+        "tags": [
+            "outer-join",
+            "null"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-044",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Normalization",
+        "topic": "Functional Dependencies",
+        "question": "Which of Armstrong's axioms are correct?",
+        "options": [
+            "Reflexivity: if Y⊆X then X→Y",
+            "Augmentation: if X→Y then XZ→YZ",
+            "Transitivity: if X→Y and Y→Z then X→Z",
+            "Commutativity: if X→Y then Y→X"
+        ],
+        "correctAnswers": [
+            "Reflexivity: if Y⊆X then X→Y",
+            "Augmentation: if X→Y then XZ→YZ",
+            "Transitivity: if X→Y and Y→Z then X→Z"
+        ],
+        "explanation": "The three Armstrong's axioms are reflexivity, augmentation, and transitivity. FDs are NOT commutative.",
+        "tags": [
+            "armstrong",
+            "axioms"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DB-045",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Transactions",
+        "topic": "Deadlocks",
+        "question": "Which methods handle deadlocks?",
+        "options": [
+            "Deadlock detection",
+            "Deadlock prevention",
+            "Timeout-based abort",
+            "Ignoring them safely"
+        ],
+        "correctAnswers": [
+            "Deadlock detection",
+            "Deadlock prevention",
+            "Timeout-based abort"
+        ],
+        "explanation": "Detection finds cycles in wait-for graph. Prevention uses ordering/timestamps. Timeouts abort waiting transactions. Ignoring is unsafe.",
+        "tags": [
+            "deadlock",
+            "handling"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-046",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Indexing & Storage",
+        "topic": "B+ Trees",
+        "question": "Which are advantages of B+ Trees?",
+        "options": [
+            "Balanced height",
+            "Efficient range queries",
+            "Linked leaf nodes",
+            "O(1) lookup always"
+        ],
+        "correctAnswers": [
+            "Balanced height",
+            "Efficient range queries",
+            "Linked leaf nodes"
+        ],
+        "explanation": "B+ Trees are always balanced (O(log n) lookup), support range queries via linked leaves. Lookup is O(log n), not O(1).",
+        "tags": [
+            "b-tree",
+            "advantages"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-047",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "Transactions",
+        "topic": "Concurrency Control",
+        "question": "Which problems does concurrency control prevent?",
+        "options": [
+            "Lost updates",
+            "Dirty reads",
+            "Non-repeatable reads",
+            "Table creation"
+        ],
+        "correctAnswers": [
+            "Lost updates",
+            "Dirty reads",
+            "Non-repeatable reads"
+        ],
+        "explanation": "Concurrency control prevents anomalies: lost updates, dirty reads, non-repeatable reads, and phantom reads. Table creation is a DDL operation.",
+        "tags": [
+            "anomalies",
+            "concurrency"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DB-048",
+        "subject": "Database Systems",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "ER Modeling",
+        "topic": "Relational Algebra",
+        "question": "Which are fundamental relational algebra operations?",
+        "options": [
+            "Selection (σ)",
+            "Projection (π)",
+            "Union (∪)",
+            "Natural Join (⋈)"
+        ],
+        "correctAnswers": [
+            "Selection (σ)",
+            "Projection (π)",
+            "Union (∪)"
+        ],
+        "explanation": "The 5 fundamental operations are σ, π, ∪, set difference, Cartesian product. Natural join is a derived operation.",
+        "tags": [
+            "fundamental",
+            "algebra"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DB-049",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Indexing & Storage",
+        "topic": "File Organization",
+        "question": "Which file organization is best for queries on non-key attributes?",
+        "options": [
+            "Secondary index",
+            "Sequential file",
+            "Heap file",
+            "Hashed file"
+        ],
+        "correctAnswer": "Secondary index",
+        "explanation": "Secondary indexes allow efficient lookup on non-key attributes without reorganizing the entire file.",
+        "tags": [
+            "secondary-index",
+            "query"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DB-050",
+        "subject": "Database Systems",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "SQL",
+        "topic": "Subqueries",
+        "question": "A correlated subquery:",
+        "options": [
+            "References the outer query's table",
+            "Runs independently",
+            "Is always faster",
+            "Cannot use WHERE"
+        ],
+        "correctAnswer": "References the outer query's table",
+        "explanation": "Correlated subqueries reference columns from the outer query, executing once per outer row.",
+        "tags": [
+            "correlated",
+            "subquery"
+        ],
+        "estimatedTimeSeconds": 45
+    }
+]

@@ -1,0 +1,290 @@
+[
+    {
+        "id": "ML",
+        "name": "Machine Learning",
+        "code": "ML",
+        "accentColor": "#8B5CF6",
+        "modules": [
+            {
+                "id": "ML-M1",
+                "name": "Supervised Learning",
+                "topics": [
+                    {
+                        "id": "ML-T1",
+                        "name": "Linear Regression"
+                    },
+                    {
+                        "id": "ML-T2",
+                        "name": "Logistic Regression"
+                    },
+                    {
+                        "id": "ML-T3",
+                        "name": "Decision Trees"
+                    },
+                    {
+                        "id": "ML-T4",
+                        "name": "Support Vector Machines"
+                    },
+                    {
+                        "id": "ML-T5",
+                        "name": "Random Forest"
+                    }
+                ]
+            },
+            {
+                "id": "ML-M2",
+                "name": "Unsupervised Learning",
+                "topics": [
+                    {
+                        "id": "ML-T6",
+                        "name": "K-Means Clustering"
+                    },
+                    {
+                        "id": "ML-T7",
+                        "name": "PCA"
+                    },
+                    {
+                        "id": "ML-T8",
+                        "name": "Hierarchical Clustering"
+                    }
+                ]
+            },
+            {
+                "id": "ML-M3",
+                "name": "Deep Learning",
+                "topics": [
+                    {
+                        "id": "ML-T9",
+                        "name": "Neural Networks"
+                    },
+                    {
+                        "id": "ML-T10",
+                        "name": "CNNs"
+                    },
+                    {
+                        "id": "ML-T11",
+                        "name": "RNNs"
+                    },
+                    {
+                        "id": "ML-T12",
+                        "name": "Transformers"
+                    }
+                ]
+            },
+            {
+                "id": "ML-M4",
+                "name": "Model Evaluation",
+                "topics": [
+                    {
+                        "id": "ML-T13",
+                        "name": "Cross Validation"
+                    },
+                    {
+                        "id": "ML-T14",
+                        "name": "Bias-Variance Tradeoff"
+                    },
+                    {
+                        "id": "ML-T15",
+                        "name": "Metrics"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "DSA",
+        "name": "Data Structures & Algorithms",
+        "code": "DSA",
+        "accentColor": "#10B981",
+        "modules": [
+            {
+                "id": "DSA-M1",
+                "name": "Arrays & Strings",
+                "topics": [
+                    {
+                        "id": "DSA-T1",
+                        "name": "Array Operations"
+                    },
+                    {
+                        "id": "DSA-T2",
+                        "name": "String Manipulation"
+                    },
+                    {
+                        "id": "DSA-T3",
+                        "name": "Sliding Window"
+                    }
+                ]
+            },
+            {
+                "id": "DSA-M2",
+                "name": "Trees & Graphs",
+                "topics": [
+                    {
+                        "id": "DSA-T4",
+                        "name": "Binary Trees"
+                    },
+                    {
+                        "id": "DSA-T5",
+                        "name": "BST"
+                    },
+                    {
+                        "id": "DSA-T6",
+                        "name": "Graph Traversal"
+                    },
+                    {
+                        "id": "DSA-T7",
+                        "name": "Shortest Path"
+                    }
+                ]
+            },
+            {
+                "id": "DSA-M3",
+                "name": "Dynamic Programming",
+                "topics": [
+                    {
+                        "id": "DSA-T8",
+                        "name": "1D DP"
+                    },
+                    {
+                        "id": "DSA-T9",
+                        "name": "2D DP"
+                    },
+                    {
+                        "id": "DSA-T10",
+                        "name": "Knapsack"
+                    }
+                ]
+            },
+            {
+                "id": "DSA-M4",
+                "name": "Sorting & Searching",
+                "topics": [
+                    {
+                        "id": "DSA-T11",
+                        "name": "Sorting Algorithms"
+                    },
+                    {
+                        "id": "DSA-T12",
+                        "name": "Binary Search"
+                    },
+                    {
+                        "id": "DSA-T13",
+                        "name": "Hashing"
+                    }
+                ]
+            },
+            {
+                "id": "DSA-M5",
+                "name": "Linked Lists & Stacks",
+                "topics": [
+                    {
+                        "id": "DSA-T14",
+                        "name": "Linked Lists"
+                    },
+                    {
+                        "id": "DSA-T15",
+                        "name": "Stacks & Queues"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "DB",
+        "name": "Database Systems",
+        "code": "DB",
+        "accentColor": "#F59E0B",
+        "modules": [
+            {
+                "id": "DB-M1",
+                "name": "SQL",
+                "topics": [
+                    {
+                        "id": "DB-T1",
+                        "name": "SELECT Queries"
+                    },
+                    {
+                        "id": "DB-T2",
+                        "name": "Joins"
+                    },
+                    {
+                        "id": "DB-T3",
+                        "name": "Subqueries"
+                    },
+                    {
+                        "id": "DB-T4",
+                        "name": "Aggregation"
+                    }
+                ]
+            },
+            {
+                "id": "DB-M2",
+                "name": "Normalization",
+                "topics": [
+                    {
+                        "id": "DB-T5",
+                        "name": "1NF 2NF 3NF"
+                    },
+                    {
+                        "id": "DB-T6",
+                        "name": "BCNF"
+                    },
+                    {
+                        "id": "DB-T7",
+                        "name": "Functional Dependencies"
+                    }
+                ]
+            },
+            {
+                "id": "DB-M3",
+                "name": "Transactions",
+                "topics": [
+                    {
+                        "id": "DB-T8",
+                        "name": "ACID Properties"
+                    },
+                    {
+                        "id": "DB-T9",
+                        "name": "Concurrency Control"
+                    },
+                    {
+                        "id": "DB-T10",
+                        "name": "Deadlocks"
+                    }
+                ]
+            },
+            {
+                "id": "DB-M4",
+                "name": "Indexing & Storage",
+                "topics": [
+                    {
+                        "id": "DB-T11",
+                        "name": "B+ Trees"
+                    },
+                    {
+                        "id": "DB-T12",
+                        "name": "Hashing"
+                    },
+                    {
+                        "id": "DB-T13",
+                        "name": "File Organization"
+                    }
+                ]
+            },
+            {
+                "id": "DB-M5",
+                "name": "ER Modeling",
+                "topics": [
+                    {
+                        "id": "DB-T14",
+                        "name": "ER Diagrams"
+                    },
+                    {
+                        "id": "DB-T15",
+                        "name": "Relational Algebra"
+                    }
+                ]
+            }
+        ]
+    }
+]

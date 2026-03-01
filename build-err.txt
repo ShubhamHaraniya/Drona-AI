@@ -1,0 +1,64 @@
+Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[root-of-the-server]__9ada043b._.js:1:20714)
+    at instantiateModule (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:740:9)
+    at getOrInstantiateModuleFromParent (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:763:12)
+    at Context.esmImport [as i] (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[root-of-the-server]__1a7147d2._.js:1:1280)
+    at instantiateModule (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:740:9)
+    at instantiateRuntimeModule (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:768:12)
+    at getOrInstantiateRuntimeModule (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:781:12)
+    at Object.m (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:790:18) {
+  clientVersion: '7.4.1',
+  errorCode: undefined,
+  retryable: undefined
+}
+Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[root-of-the-server]__9ada043b._.js:1:20714)
+    at instantiateModule (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:740:9)
+    at getOrInstantiateModuleFromParent (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:763:12)
+    at Context.esmImport [as i] (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[root-of-the-server]__9d6a338d._.js:34:45160)
+    at instantiateModule (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:740:9)
+    at getOrInstantiateModuleFromParent (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:763:12)
+    at Context.esmImport [as i] (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\Shubham Haraniya\Desktop\College\Study LLM\gyansarthi\.next\server\chunks\[root-of-the-server]__61be15f5._.js:1:1690) {
+  clientVersion: '7.4.1',
+  errorCode: undefined,
+  retryable: undefined
+}
+
+> Build error occurred
+Error: Failed to collect page data for /api/signup
+    at ignore-listed frames {
+  type: 'Error'
+}

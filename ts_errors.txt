@@ -1,0 +1,2 @@
+src/lib/auth.ts(29,31): error TS2352: Conversion of type 'User | AdapterUser' to type '{ role: string; }' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Property 'role' is missing in type 'AdapterUser' but required in type '{ role: string; }'.

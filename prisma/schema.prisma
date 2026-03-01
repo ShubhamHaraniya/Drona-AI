@@ -1,0 +1,160 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("STUDENT")
+  createdAt DateTime @default(now())
+
+  quizResults       QuizResult[]
+  schedules         Schedule[]
+  progress          StudentProgress?
+  teacherSubjects   Subject[]        @relation("TeacherSubjects")
+  enrollments       Enrollment[]     @relation("StudentEnrollments")
+  grades            Grade[]
+  uploadedMaterials Material[]       @relation("UploadedMaterials")
+  topicProgress     TopicProgress[]
+  todoItems         ToDoItem[]
+}
+
+model Subject {
+  id          String   @id @default(cuid())
+  name        String
+  code        String   @default("")
+  teacherId   String
+  description String   @default("")
+  createdAt   DateTime @default(now())
+
+  teacher     User         @relation("TeacherSubjects", fields: [teacherId], references: [id])
+  enrollments Enrollment[]
+  grades      Grade[]
+  materials   Material[]
+  schedules   Schedule[]   @relation("SubjectSchedules")
+}
+
+model Enrollment {
+  id         String   @id @default(cuid())
+  studentId  String
+  subjectId  String
+  enrolledAt DateTime @default(now())
+
+  student User    @relation("StudentEnrollments", fields: [studentId], references: [id], onDelete: Cascade)
+  subject Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, subjectId])
+}
+
+model Grade {
+  id            String   @id @default(cuid())
+  studentId     String
+  subjectId     String
+  componentType String
+  marksObtained Float
+  totalMarks    Float
+  timestamp     DateTime @default(now())
+
+  student User    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  subject Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+}
+
+model Material {
+  id              String   @id @default(cuid())
+  subjectId       String
+  uploadedBy      String
+  fileName        String
+  filePath        String   @default("")
+  vectorNamespace String   @default("teacher_materials")
+  docType         String   @default("lecture_notes")
+  chunkCount      Int      @default(0)
+  uploadDate      DateTime @default(now())
+
+  subject  Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  uploader User    @relation("UploadedMaterials", fields: [uploadedBy], references: [id])
+}
+
+model TopicProgress {
+  id                String   @id @default(cuid())
+  studentId         String
+  subjectName       String
+  topicName         String
+  masteryScore      Float    @default(0)
+  failCount         Int      @default(0)
+  quizCount         Int      @default(0)
+  revisionScheduled Boolean  @default(false)
+  lastTestedAt      DateTime?
+  lastUpdated       DateTime @updatedAt
+
+  student User @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, subjectName, topicName])
+}
+
+model QuizResult {
+  id              String   @id @default(cuid())
+  userId          String
+  subject         String
+  score           Float
+  maxScore        Float
+  percentage      Float
+  topicBreakdown  String
+  weakAreas       String
+  recommendations String
+  questionReview  String
+  confidenceData  String
+  createdAt       DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Schedule {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String
+  subject   String
+  title     String
+  datetime  DateTime
+  createdBy String   @default("student")
+  subjectId String?
+  priority  Int      @default(0)
+  createdAt DateTime @default(now())
+
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectRef Subject? @relation("SubjectSchedules", fields: [subjectId], references: [id])
+}
+
+model StudentProgress {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  subjectStats       String   @default("{}")
+  topicMastery       String   @default("{}")
+  streak             Int      @default(0)
+  lastActiveDate     String?
+  confidencePatterns String   @default("[]")
+  adaptiveDifficulty String   @default("{}")
+  updatedAt          DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ToDoItem {
+  id          String   @id @default(cuid())
+  studentId   String
+  subjectName String
+  description String
+  source      String   @default("manual")
+  status      String   @default("pending")
+  priority    Int      @default(0)
+  dueDate     DateTime?
+  createdAt   DateTime @default(now())
+
+  student User @relation(fields: [studentId], references: [id], onDelete: Cascade)
+}

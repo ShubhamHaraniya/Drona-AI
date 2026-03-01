@@ -1,0 +1,1044 @@
+[
+    {
+        "id": "DSA-001",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Arrays & Strings",
+        "topic": "Array Operations",
+        "question": "What is the time complexity of accessing an element by index in an array?",
+        "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n²)"
+        ],
+        "correctAnswer": "O(1)",
+        "explanation": "Arrays provide constant-time random access since elements are stored in contiguous memory locations.",
+        "tags": [
+            "array",
+            "time-complexity"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-002",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Arrays & Strings",
+        "topic": "Array Operations",
+        "question": "What is the time complexity of inserting at the beginning of an array?",
+        "options": [
+            "O(n)",
+            "O(1)",
+            "O(log n)",
+            "O(n log n)"
+        ],
+        "correctAnswer": "O(n)",
+        "explanation": "All existing elements need to be shifted right to make space at position 0.",
+        "tags": [
+            "array",
+            "insertion"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-003",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "Which sorting algorithm has worst-case O(n²) but average-case O(n log n)?",
+        "options": [
+            "Quick Sort",
+            "Merge Sort",
+            "Heap Sort",
+            "Counting Sort"
+        ],
+        "correctAnswer": "Quick Sort",
+        "explanation": "Quick Sort's worst case (already sorted input with bad pivot) is O(n²), but average with random pivot is O(n log n).",
+        "tags": [
+            "quicksort",
+            "complexity"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-004",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Sorting & Searching",
+        "topic": "Binary Search",
+        "question": "Binary search requires the array to be:",
+        "options": [
+            "Sorted",
+            "Reversed",
+            "Linked",
+            "Empty"
+        ],
+        "correctAnswer": "Sorted",
+        "explanation": "Binary search halves the search space each step, which only works correctly if elements are in sorted order.",
+        "tags": [
+            "binary-search",
+            "prerequisite"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-005",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Trees & Graphs",
+        "topic": "Binary Trees",
+        "question": "A binary tree node has at most how many children?",
+        "options": [
+            "2",
+            "3",
+            "1",
+            "Unlimited"
+        ],
+        "correctAnswer": "2",
+        "explanation": "By definition, each node in a binary tree can have at most a left and a right child (2 children).",
+        "tags": [
+            "binary-tree",
+            "basics"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-006",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Linked Lists & Stacks",
+        "topic": "Stacks & Queues",
+        "question": "A stack follows which principle?",
+        "options": [
+            "LIFO",
+            "FIFO",
+            "LILO",
+            "Random"
+        ],
+        "correctAnswer": "LIFO",
+        "explanation": "Stack = Last In First Out. The most recently pushed element is popped first.",
+        "tags": [
+            "stack",
+            "lifo"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-007",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Linked Lists & Stacks",
+        "topic": "Linked Lists",
+        "question": "What is the advantage of a linked list over an array?",
+        "options": [
+            "Dynamic size / efficient insertion",
+            "Faster random access",
+            "Less memory usage",
+            "Better cache performance"
+        ],
+        "correctAnswer": "Dynamic size / efficient insertion",
+        "explanation": "Linked lists grow dynamically and allow O(1) insertion/deletion at known positions without shifting elements.",
+        "tags": [
+            "linkedlist",
+            "advantages"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-008",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Sorting & Searching",
+        "topic": "Hashing",
+        "question": "Average-case time complexity of hash table lookup is:",
+        "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n²)"
+        ],
+        "correctAnswer": "O(1)",
+        "explanation": "With a good hash function, hash tables provide constant-time average lookup via direct indexing.",
+        "tags": [
+            "hash",
+            "lookup"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-009",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Trees & Graphs",
+        "topic": "Graph Traversal",
+        "question": "BFS uses which data structure?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Heap",
+            "Array"
+        ],
+        "correctAnswer": "Queue",
+        "explanation": "BFS uses a queue (FIFO) to explore all neighbors at the current depth before moving deeper.",
+        "tags": [
+            "bfs",
+            "queue"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-010",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Trees & Graphs",
+        "topic": "BST",
+        "question": "In a BST, the left child is always:",
+        "options": [
+            "Less than the parent",
+            "Greater than the parent",
+            "Equal to the parent",
+            "Random"
+        ],
+        "correctAnswer": "Less than the parent",
+        "explanation": "BST property: left subtree values < node value < right subtree values.",
+        "tags": [
+            "bst",
+            "property"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-011",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Dynamic Programming",
+        "topic": "1D DP",
+        "question": "Dynamic programming is based on:",
+        "options": [
+            "Overlapping subproblems and optimal substructure",
+            "Divide and conquer only",
+            "Greedy choice",
+            "Random sampling"
+        ],
+        "correctAnswer": "Overlapping subproblems and optimal substructure",
+        "explanation": "DP requires both: subproblems recur (overlapping) and optimal solutions build from optimal sub-solutions.",
+        "tags": [
+            "dp",
+            "principles"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-012",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Trees & Graphs",
+        "topic": "Graph Traversal",
+        "question": "DFS uses which data structure?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Heap",
+            "Deque"
+        ],
+        "correctAnswer": "Stack",
+        "explanation": "DFS uses a stack (or recursion) to go as deep as possible before backtracking.",
+        "tags": [
+            "dfs",
+            "stack"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-013",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Easy",
+        "module": "Arrays & Strings",
+        "topic": "String Manipulation",
+        "question": "Time complexity of concatenating two strings of length m and n is:",
+        "options": [
+            "O(m+n)",
+            "O(1)",
+            "O(m×n)",
+            "O(log(m+n))"
+        ],
+        "correctAnswer": "O(m+n)",
+        "explanation": "String concatenation creates a new string, copying all m+n characters.",
+        "tags": [
+            "string",
+            "concatenation"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-014",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "Merge Sort's time complexity in ALL cases is:",
+        "options": [
+            "O(n log n)",
+            "O(n²)",
+            "O(n)",
+            "O(log n)"
+        ],
+        "correctAnswer": "O(n log n)",
+        "explanation": "Merge Sort always divides in half (log n levels) and merges n elements at each level → O(n log n) guaranteed.",
+        "tags": [
+            "mergesort",
+            "guaranteed"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-015",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Trees & Graphs",
+        "topic": "Binary Trees",
+        "question": "The height of a balanced BST with n nodes is:",
+        "options": [
+            "O(log n)",
+            "O(n)",
+            "O(n²)",
+            "O(1)"
+        ],
+        "correctAnswer": "O(log n)",
+        "explanation": "A balanced BST has roughly equal-sized subtrees, so height ≈ log₂(n).",
+        "tags": [
+            "bst",
+            "height"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-016",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Trees & Graphs",
+        "topic": "Shortest Path",
+        "question": "Dijkstra's algorithm fails when:",
+        "options": [
+            "Graph has negative edge weights",
+            "Graph is undirected",
+            "Graph has cycles",
+            "Graph is large"
+        ],
+        "correctAnswer": "Graph has negative edge weights",
+        "explanation": "Dijkstra's greedy approach assumes relaxed edges stay relaxed, which breaks with negative weights.",
+        "tags": [
+            "dijkstra",
+            "negative-weights"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-017",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Dynamic Programming",
+        "topic": "Knapsack",
+        "question": "0/1 Knapsack problem has time complexity:",
+        "options": [
+            "O(nW) where n=items, W=capacity",
+            "O(n²)",
+            "O(2^n)",
+            "O(n log n)"
+        ],
+        "correctAnswer": "O(nW) where n=items, W=capacity",
+        "explanation": "DP table has n rows and W columns. Each cell is computed in O(1), so total is O(nW) — pseudo-polynomial.",
+        "tags": [
+            "knapsack",
+            "dp"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-018",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Dynamic Programming",
+        "topic": "2D DP",
+        "question": "Longest Common Subsequence (LCS) of two strings of length m and n has complexity:",
+        "options": [
+            "O(mn)",
+            "O(m+n)",
+            "O(m²+n²)",
+            "O(2^(m+n))"
+        ],
+        "correctAnswer": "O(mn)",
+        "explanation": "LCS uses a 2D DP table of size m×n where each cell depends on previously computed cells.",
+        "tags": [
+            "lcs",
+            "dp"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-019",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Arrays & Strings",
+        "topic": "Sliding Window",
+        "question": "Sliding window technique is best for:",
+        "options": [
+            "Finding subarrays/substrings with certain properties",
+            "Sorting arrays",
+            "Building trees",
+            "Graph traversal"
+        ],
+        "correctAnswer": "Finding subarrays/substrings with certain properties",
+        "explanation": "Sliding window maintains a window of elements and slides it across the array to efficiently find valid subarrays.",
+        "tags": [
+            "sliding-window",
+            "technique"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-020",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Sorting & Searching",
+        "topic": "Hashing",
+        "question": "How are hash collisions typically resolved?",
+        "options": [
+            "Chaining or open addressing",
+            "Ignoring",
+            "Deleting the key",
+            "Sorting the table"
+        ],
+        "correctAnswer": "Chaining or open addressing",
+        "explanation": "Chaining uses linked lists at each slot; open addressing probes for the next available slot.",
+        "tags": [
+            "collision",
+            "resolution"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-021",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Trees & Graphs",
+        "topic": "Graph Traversal",
+        "question": "Topological sort is applicable to:",
+        "options": [
+            "Directed Acyclic Graphs (DAGs)",
+            "Undirected graphs",
+            "Cyclic graphs",
+            "Weighted graphs only"
+        ],
+        "correctAnswer": "Directed Acyclic Graphs (DAGs)",
+        "explanation": "Topological ordering requires a DAG — cycles make it impossible to linearly order vertices.",
+        "tags": [
+            "topological-sort",
+            "dag"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-022",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Medium",
+        "module": "Linked Lists & Stacks",
+        "topic": "Linked Lists",
+        "question": "Detecting a cycle in a linked list uses which algorithm?",
+        "options": [
+            "Floyd's Tortoise and Hare",
+            "Dijkstra's",
+            "Kruskal's",
+            "Prim's"
+        ],
+        "correctAnswer": "Floyd's Tortoise and Hare",
+        "explanation": "Two pointers move at different speeds — if they meet, a cycle exists. O(n) time, O(1) space.",
+        "tags": [
+            "cycle-detection",
+            "floyd"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-023",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Dynamic Programming",
+        "topic": "1D DP",
+        "question": "The time complexity of the recursive Fibonacci without memoization is:",
+        "options": [
+            "O(2^n)",
+            "O(n)",
+            "O(n²)",
+            "O(log n)"
+        ],
+        "correctAnswer": "O(2^n)",
+        "explanation": "Each call branches into two sub-calls, creating an exponential call tree of size ~2^n.",
+        "tags": [
+            "fibonacci",
+            "exponential"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-024",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Trees & Graphs",
+        "topic": "Shortest Path",
+        "question": "Bellman-Ford algorithm can detect:",
+        "options": [
+            "Negative weight cycles",
+            "Minimum spanning trees",
+            "Strongly connected components",
+            "Maximum flow"
+        ],
+        "correctAnswer": "Negative weight cycles",
+        "explanation": "Bellman-Ford runs V-1 iterations. If any edge can still be relaxed in the Vth iteration, a negative cycle exists.",
+        "tags": [
+            "bellman-ford",
+            "negative-cycle"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-025",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "Which sorting algorithm is NOT comparison-based?",
+        "options": [
+            "Radix Sort",
+            "Merge Sort",
+            "Quick Sort",
+            "Heap Sort"
+        ],
+        "correctAnswer": "Radix Sort",
+        "explanation": "Radix Sort sorts by processing individual digits/characters, bypassing the Ω(n log n) comparison-based lower bound.",
+        "tags": [
+            "radix-sort",
+            "non-comparison"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-026",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Arrays & Strings",
+        "topic": "Array Operations",
+        "question": "An array has 100 elements. How many comparisons does linear search need in the worst case?",
+        "correctAnswer": 100,
+        "explanation": "Linear search checks each element sequentially. Worst case: element is at the end or doesn't exist → n comparisons.",
+        "tags": [
+            "linear-search",
+            "worst-case"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-027",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Sorting & Searching",
+        "topic": "Binary Search",
+        "question": "How many comparisons does binary search need for an array of 1024 elements in the worst case?",
+        "correctAnswer": 10,
+        "explanation": "Worst case = log₂(1024) = 10. Binary search halves the problem each step.",
+        "tags": [
+            "binary-search",
+            "comparisons"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-028",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Trees & Graphs",
+        "topic": "Binary Trees",
+        "question": "A complete binary tree with height 3 has at most how many nodes?",
+        "correctAnswer": 15,
+        "explanation": "Max nodes = 2^(h+1) - 1 = 2^4 - 1 = 15 for height 3 (levels 0,1,2,3).",
+        "tags": [
+            "binary-tree",
+            "nodes"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-029",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "Merge Sort on an array of 64 elements makes how many levels of recursion?",
+        "correctAnswer": 6,
+        "explanation": "Levels = log₂(64) = 6. Each level divides the array in half.",
+        "tags": [
+            "mergesort",
+            "recursion"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-030",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Dynamic Programming",
+        "topic": "1D DP",
+        "question": "The 7th Fibonacci number (F1=1, F2=1, F3=2, ...) is:",
+        "correctAnswer": 13,
+        "explanation": "F1=1, F2=1, F3=2, F4=3, F5=5, F6=8, F7=13.",
+        "tags": [
+            "fibonacci",
+            "calculation"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-031",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Trees & Graphs",
+        "topic": "Graph Traversal",
+        "question": "A complete graph with 6 vertices has how many edges?",
+        "correctAnswer": 15,
+        "explanation": "Edges = n(n-1)/2 = 6×5/2 = 15. Every pair of vertices is connected.",
+        "tags": [
+            "complete-graph",
+            "edges"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-032",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Dynamic Programming",
+        "topic": "Knapsack",
+        "question": "In 0/1 Knapsack with 4 items and capacity 7, the DP table has how many cells?",
+        "correctAnswer": 32,
+        "explanation": "DP table dimensions: (items+1) × (capacity+1) = 5 × 8 = 40. But typically computed as 4 × 8 = 32 (excluding header row).",
+        "tags": [
+            "knapsack",
+            "table-size"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-033",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Sorting & Searching",
+        "topic": "Hashing",
+        "question": "A hash table with 10 slots and load factor 0.7 contains how many elements?",
+        "correctAnswer": 7,
+        "explanation": "Load factor = n/m, so n = 0.7 × 10 = 7 elements.",
+        "tags": [
+            "load-factor",
+            "hashing"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-034",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Trees & Graphs",
+        "topic": "BST",
+        "question": "The minimum height of a BST with 15 nodes is:",
+        "correctAnswer": 3,
+        "explanation": "Min height of BST = floor(log₂(15)) = 3. A balanced BST with 15 nodes has height 3 (levels 0-3).",
+        "tags": [
+            "bst",
+            "min-height"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-035",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Dynamic Programming",
+        "topic": "2D DP",
+        "question": "LCS of 'ABCBDAB' (length 7) and 'BDCAB' (length 5): what is the DP table size (rows × columns)?",
+        "correctAnswer": 48,
+        "explanation": "Table size = (7+1) × (5+1) = 8 × 6 = 48 cells (including base cases).",
+        "tags": [
+            "lcs",
+            "table"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DSA-036",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Trees & Graphs",
+        "topic": "Shortest Path",
+        "question": "In Dijkstra's with a min-heap, time complexity is O((V+E)log V). For V=100, E=500, what is V+E?",
+        "correctAnswer": 600,
+        "explanation": "V + E = 100 + 500 = 600.",
+        "tags": [
+            "dijkstra",
+            "complexity"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-037",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Hard",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "How many swaps does bubble sort need for [5,3,1] in worst case?",
+        "correctAnswer": 3,
+        "explanation": "Pass 1: (5,3)→swap, (5,1)→swap → [3,1,5]. Pass 2: (3,1)→swap → [1,3,5]. Total = 3 swaps.",
+        "tags": [
+            "bubblesort",
+            "swaps"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DSA-038",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Linked Lists & Stacks",
+        "topic": "Stacks & Queues",
+        "question": "Evaluating postfix expression '2 3 + 4 ×' gives:",
+        "correctAnswer": 20,
+        "explanation": "Stack: push 2, push 3, pop 3 and 2 → 2+3=5, push 5, push 4, pop 4 and 5 → 5×4=20.",
+        "tags": [
+            "postfix",
+            "stack"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-039",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Easy",
+        "module": "Linked Lists & Stacks",
+        "topic": "Linked Lists",
+        "question": "A singly linked list with 5 nodes needs how many pointers (next pointers only)?",
+        "correctAnswer": 5,
+        "explanation": "Each of the 5 nodes has one next pointer (the last one points to null). Total = 5 pointers.",
+        "tags": [
+            "linkedlist",
+            "pointers"
+        ],
+        "estimatedTimeSeconds": 15
+    },
+    {
+        "id": "DSA-040",
+        "subject": "Data Structures & Algorithms",
+        "type": "Numerical",
+        "difficulty": "Medium",
+        "module": "Arrays & Strings",
+        "topic": "Sliding Window",
+        "question": "Maximum sum subarray of size 3 in [2,1,5,1,3,2]: what is the max sum?",
+        "correctAnswer": 9,
+        "explanation": "Windows: [2,1,5]=8, [1,5,1]=7, [5,1,3]=9, [1,3,2]=6. Max = 9.",
+        "tags": [
+            "sliding-window",
+            "max-sum"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-041",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Easy",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "Which sorting algorithms have O(n log n) average-case complexity?",
+        "options": [
+            "Merge Sort",
+            "Quick Sort",
+            "Heap Sort",
+            "Bubble Sort"
+        ],
+        "correctAnswers": [
+            "Merge Sort",
+            "Quick Sort",
+            "Heap Sort"
+        ],
+        "explanation": "Merge, Quick (avg), and Heap Sort all achieve O(n log n). Bubble Sort is O(n²).",
+        "tags": [
+            "sorting",
+            "nlogn"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-042",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Easy",
+        "module": "Trees & Graphs",
+        "topic": "Binary Trees",
+        "question": "Which are valid tree traversal orders?",
+        "options": [
+            "Inorder",
+            "Preorder",
+            "Postorder",
+            "Sideorder"
+        ],
+        "correctAnswers": [
+            "Inorder",
+            "Preorder",
+            "Postorder"
+        ],
+        "explanation": "Inorder (L-N-R), Preorder (N-L-R), Postorder (L-R-N) are standard. Sideorder doesn't exist.",
+        "tags": [
+            "traversal",
+            "tree"
+        ],
+        "estimatedTimeSeconds": 30
+    },
+    {
+        "id": "DSA-043",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Trees & Graphs",
+        "topic": "Graph Traversal",
+        "question": "Which can be used to find connected components in an undirected graph?",
+        "options": [
+            "BFS",
+            "DFS",
+            "Union-Find",
+            "Dijkstra's"
+        ],
+        "correctAnswers": [
+            "BFS",
+            "DFS",
+            "Union-Find"
+        ],
+        "explanation": "BFS, DFS, and Union-Find can all identify connected components. Dijkstra finds shortest paths.",
+        "tags": [
+            "components",
+            "graph"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-044",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Dynamic Programming",
+        "topic": "1D DP",
+        "question": "Which problems can be solved with dynamic programming?",
+        "options": [
+            "Fibonacci",
+            "Longest Increasing Subsequence",
+            "Coin Change",
+            "Finding maximum in array"
+        ],
+        "correctAnswers": [
+            "Fibonacci",
+            "Longest Increasing Subsequence",
+            "Coin Change"
+        ],
+        "explanation": "Finding max in an array is a simple linear scan — no overlapping subproblems needed.",
+        "tags": [
+            "dp",
+            "problems"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-045",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Medium",
+        "module": "Linked Lists & Stacks",
+        "topic": "Stacks & Queues",
+        "question": "Which applications use stacks?",
+        "options": [
+            "Function call management",
+            "Undo operations",
+            "Expression evaluation",
+            "BFS"
+        ],
+        "correctAnswers": [
+            "Function call management",
+            "Undo operations",
+            "Expression evaluation"
+        ],
+        "explanation": "Call stack for functions, undo uses stack for history, expression parsing uses stack. BFS uses a queue.",
+        "tags": [
+            "stack",
+            "applications"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-046",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "Sorting & Searching",
+        "topic": "Sorting Algorithms",
+        "question": "Which sorting algorithms are stable?",
+        "options": [
+            "Merge Sort",
+            "Insertion Sort",
+            "Bubble Sort",
+            "Quick Sort"
+        ],
+        "correctAnswers": [
+            "Merge Sort",
+            "Insertion Sort",
+            "Bubble Sort"
+        ],
+        "explanation": "Stable sorts preserve relative order of equal elements. Standard Quick Sort is not stable.",
+        "tags": [
+            "stable-sort",
+            "property"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DSA-047",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "Trees & Graphs",
+        "topic": "Shortest Path",
+        "question": "Which algorithms find shortest paths from a single source?",
+        "options": [
+            "Dijkstra's",
+            "Bellman-Ford",
+            "BFS (unweighted)",
+            "Prim's"
+        ],
+        "correctAnswers": [
+            "Dijkstra's",
+            "Bellman-Ford",
+            "BFS (unweighted)"
+        ],
+        "explanation": "Dijkstra (non-negative), Bellman-Ford (any weights), BFS (unweighted) find SSSP. Prim's finds MST.",
+        "tags": [
+            "sssp",
+            "algorithms"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DSA-048",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Dynamic Programming",
+        "topic": "2D DP",
+        "question": "Edit distance between two strings uses which DP relation?",
+        "options": [
+            "dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + cost",
+            "dp[i][j] = dp[i-1][j-1]",
+            "dp[i][j] = max(dp[i-1][j], dp[i][j-1])",
+            "dp[i][j] = dp[i-1][j] × dp[i][j-1]"
+        ],
+        "correctAnswer": "dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + cost",
+        "explanation": "Edit distance considers three operations: insert (dp[i][j-1]+1), delete (dp[i-1][j]+1), replace (dp[i-1][j-1]+cost).",
+        "tags": [
+            "edit-distance",
+            "recurrence"
+        ],
+        "estimatedTimeSeconds": 60
+    },
+    {
+        "id": "DSA-049",
+        "subject": "Data Structures & Algorithms",
+        "type": "MCQ",
+        "difficulty": "Hard",
+        "module": "Trees & Graphs",
+        "topic": "Graph Traversal",
+        "question": "Tarjan's algorithm finds:",
+        "options": [
+            "Strongly connected components",
+            "Shortest paths",
+            "Minimum spanning tree",
+            "Maximum flow"
+        ],
+        "correctAnswer": "Strongly connected components",
+        "explanation": "Tarjan's uses DFS with a stack to find all SCCs in O(V+E) time.",
+        "tags": [
+            "tarjan",
+            "scc"
+        ],
+        "estimatedTimeSeconds": 45
+    },
+    {
+        "id": "DSA-050",
+        "subject": "Data Structures & Algorithms",
+        "type": "MSQ",
+        "difficulty": "Hard",
+        "module": "Arrays & Strings",
+        "topic": "Sliding Window",
+        "question": "Which problems use the two-pointer technique?",
+        "options": [
+            "Two Sum (sorted)",
+            "Container With Most Water",
+            "Palindrome check",
+            "Matrix multiplication"
+        ],
+        "correctAnswers": [
+            "Two Sum (sorted)",
+            "Container With Most Water",
+            "Palindrome check"
+        ],
+        "explanation": "Two pointers work on sorted arrays or arrays with constraints. Matrix multiplication is a different paradigm.",
+        "tags": [
+            "two-pointer",
+            "problems"
+        ],
+        "estimatedTimeSeconds": 60
+    }
+]
